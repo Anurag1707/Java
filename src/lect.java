@@ -24,3 +24,4 @@ public class lect {
         System.out.println("Full line:" +d);
     }
 }
+
