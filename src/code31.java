@@ -1,11 +1,11 @@
 
-class MyThread extends Thread{
+class MyThread2 extends Thread{
     public void run(){
         System.out.println(Thread.currentThread().getName());
         for(int i=0;i<5;i++){
-            System.out.println(i + "t1");
+            System.out.println("dowloading file.." + (i*20) + "%");
             try {
-                Thread.sleep(5000);
+                Thread.sleep(1000);
             }catch (Exception e){
 
             }
@@ -14,9 +14,9 @@ class MyThread extends Thread{
     }
 }
 
-public class code30 {
+public class code31 {
     public static void main(String[] args){
-        MyThread t1=new MyThread();
+        MyThread2 t1=new MyThread2();
         t1.start();
         try {
             t1.join();
